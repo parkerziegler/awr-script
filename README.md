@@ -1,1 +1,6 @@
 # awr-script
+This Areal Weighted Reaggregation script, built on Python and the ArcPy site package, automates a geospatial technique for reaggregating data in one areal unit by the boundaries of another areal unit when these two units are not nested. It achieves this through calculating an areal weight based on the proportion of the intersect feature area to the original feature area, applying this weight to the data of interest, and then dissolving the data along the boundaries of the new features.
+
+I first learned about this technique from Professor Jeff Howarth at Middlebury College – this script simply aims to abstract the technique to apply to any two non-nested polygon geometries at any spatial scale with any number of data fields. To read more about how I built and designed this script, head here: http://parkerziegler.com/senior-research-programming-for-gis/2016/3/16/project-2. To read the official documentation and learn how to set the tool up for use in ArcMap, head here: http://static1.squarespace.com/static/56807079c647adf832f83799/t/571a739807eaa03ed5197646/1461351320903/AWR_Documentation.pdf.
+
+Future work on this script will involve creating an open source alternative in QGIS.
